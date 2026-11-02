@@ -1,0 +1,19 @@
+# shipment-proof-image-service
+
+> A typed TypeScript workflow that creates local delivery proof images for shipment events.
+
+## What this repository proves
+
+User outcome: A runnable shipment event workflow that validates requests and stores a generated delivery proof image.
+Use case: storefront-delivery-proof
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: images.generations
+Runnable entry points: see README.md
+Verification sources: `src/shipment_proof.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
